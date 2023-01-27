@@ -13,3 +13,40 @@ CS 260 Startup Project
 #Overall, happy to know about this!
 
 
+Elevator Pitch:
+My idea is to create an application to test reflexes. The basic idea is the screen is a mono-color grid. At intervals, one randomized grid square would change color. The user would click in that square as fast as possible and the application would time their response. The user could choose a setting from “Easy” (2x2 grid) to “Hard” (100x100 grid). They could choose the color of the random tile from a provided list. They could choose how many rounds they want to play (and their final score would be the average of all rounds). At the end, their reflex time would be presented on the screen.
+
+The menu (Home Page)
+
+~Reflex Test~
+
+Choose Difficulty ▽ (▽ = Drop Down Menu)
+Beginner [2x2]
+Easy [5x5]
+Intermediate [25x25]
+Hard [50x50]]
+Extreme [100x100]
+
+Choose # of Rounds ▽
+Rounds: ___
+
+Choose Color ▽
+Red
+Orange
+Yellow
+Green
+Blue
+Purple
+Pink
+Black
+
+Round 1 Start
+<img width="624" alt="image" src="https://user-images.githubusercontent.com/97321928/215187903-c234febe-82a0-430d-839a-96d153b8184f.png">
+
+First Grid Square
+<img width="625" alt="image" src="https://user-images.githubusercontent.com/97321928/215188135-754c7fb9-b414-4be4-a5bd-f7c1b1a31575.png">
+
+Etc
+
+Closing Page:
+Your reflex score: ___ seconds/mins/hours/whatever
