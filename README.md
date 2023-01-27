@@ -18,7 +18,7 @@ My idea is to create an application to test reflexes. The basic idea is the scre
 
 The menu (Home Page)
 
-~Reflex Test~
+Reflex Test
 
 Choose Difficulty ▽ (▽ = Drop Down Menu)
 Beginner [2x2]
