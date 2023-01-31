@@ -50,3 +50,8 @@ Etc
 
 Closing Page:
 Your reflex score: ___ seconds/mins/hours/whatever
+
+
+http://13.58.9.209/
+
+ssh -i /Users/averypark/Downloads/cs260keypair.pem ubuntu@13.58.9.209
