@@ -56,4 +56,6 @@ http://13.58.9.209/
 
 ssh -i /Users/averypark/Downloads/cs260keypair.pem ubuntu@13.58.9.209
 
-http://avery260.click
+http://avery260website.click
+
+./deployWebsite.sh  -k /Users/averypark/Downloads/cs260keypair.pem -h avery260website.click
