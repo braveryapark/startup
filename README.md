@@ -60,6 +60,10 @@ http://avery260website.click
 
 ./deployWebsite.sh  -k /Users/averypark/Downloads/cs260keypair.pem -h avery260website.click
 
-Simon Project
+Simon Initial Project
 I learned that html likes it when you don't type the first " and when you do type the second ". It took a lot of struggling to figure that out. Also <nav><menu><li></li></menu></nav> creates a menu. Then you put the references in the <li> items.
   ./deployFiles.sh  -k /Users/averypark/Downloads/cs260keypair.pem -h avery260website.click -s simon
+  
+Simon CSS Project
+I learned that it is often better to use width properties, rather than margin properties to space elements equal distances apart. I struggled with this for a good amount of time...
+
