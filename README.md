@@ -52,6 +52,7 @@ Closing Page:
 Your reflex score: ___ seconds/mins/hours/whatever
 
 *UPDATE* I think I'm going to make a set number of buttons. Maybe each round there will be more, but I don't know how to let the user choose with what I currently know.
+*UPDATE* Round 1 will just have 4 buttons. Round 2 will have 9. Round 3 will have 16. If I don't like the look, I'll change these later.
 
 
 http://13.58.9.209/
