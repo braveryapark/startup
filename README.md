@@ -51,6 +51,8 @@ Etc
 Closing Page:
 Your reflex score: ___ seconds/mins/hours/whatever
 
+*UPDATE* I think I'm going to make a set number of buttons. Maybe each round there will be more, but I don't know how to let the user choose with what I currently know.
+
 
 http://13.58.9.209/
 
