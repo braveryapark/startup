@@ -70,3 +70,5 @@ I learned that html likes it when you don't type the first " and when you do typ
 Simon CSS Project
 I learned that it is often better to use width properties, rather than margin properties to space elements equal distances apart. I struggled with this for a good amount of time...
 
+Startup CSS Project
+I learned that I have a hard time centering things. I sometimes have to try an center a bunch of parent and child elements to get the look I want. I also learned that you can make only text clickable in the button or make the whole button clickable.
