@@ -6,22 +6,66 @@
         <title>Startup</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <style>
-            
+            h1{
+                text-align: center;
+            }
+            .intro{
+                display: flex;
+                flex-direction: row;
+            }
+            .about{
+                display: flex;
+                width: 45%;
+                margin-right: 5%;
+                margin-left: 5%;
+                flex-direction: column;
+            }
+            .gettingStarted{
+                display: flex;
+                width: 45%;
+                margin-right: 5%;
+                margin-left: 5%;
+                flex-direction: column;
+            }
+            main{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            button{
+                width: 80%;
+                margin: auto;
+            }
+            .github{
+                width: 10%;
+            }
         </style>
     </head>
     <body>
         <header>
             <h1>Welcome to Reflex Tester</h1>
         </header>
+        <hr>
         <main>
-            
+            <div class="intro">
+                <div class="about">
+                    <h2>About Reflex Tester</h2>
+                    <p>Reflex tester is a game meant to quanitfy the user's reflex response. There are multiple rounds and each round will increase in difficulty. At the end of the three rounds, the times of your three rounds will be combined and displayed as your overall score.</p>
+                </div>
+                <div class="gettingStarted">
+                    <h2>How to Play</h2>
+                    
+                    <p>Once you click the button below, your job will be to click the mismatching square as fast as you can. This will immediately take you to the next round where you repeat the process until all rounds are complete. Your score will then be displayed.</p>
+                </div>
+            </div>
+            <button class="btn btn-success" onclick=window.location.href='http://127.0.0.1:5500/startup/round1.html'>Ready, Set, Go!</button>
+
         </main>
         <footer>
             <hr />
             <span class="text-reset">Avery Park</span>
             <br />
-            <button class = "btn btn-info"><a href= "https://github.com/braveryapark/simon">My Github</a></button>
-            <a href="https://github.com/braveryapark/startup"></a>
+            <button class = "github"><a href= "https://github.com/braveryapark/startup">My Github</a></button>
         </footer>
     </body>
 
