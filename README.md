@@ -53,6 +53,22 @@ Your reflex score: ___ seconds/mins/hours/whatever
 
 *UPDATE* I think I'm going to make a set number of buttons. Maybe each round there will be more, but I don't know how to let the user choose with what I currently know.
 *UPDATE* Round 1 will just have 4 buttons. Round 2 will have 9. Round 3 will have 16. If I don't like the look, I'll change these later.
+*UPDATE* I am planning on having just one screen of many butons, but the number of rounds are unlimited. It is only limited by the user pressing "Done". Then times are averaged and the score sheet will appear.
+*TO DO* 
+Save username as done in Simon.
+Evaluate times.
+Calculate averages.
+Print to scoresheet.
+Fit buttons to screen.
+Add "Done" button.
+Change colors.
+*Possible Cool Things*
+End if wrong button is clicked.
+User picks color scheme.
+User picks number of buttons (or level of difficulty).
+Allow multiple users to have scores recorded on scoresheet.
+Shadow buttons(on hover or all).
+
 
 
 http://13.58.9.209/
