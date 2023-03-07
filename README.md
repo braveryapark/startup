@@ -88,3 +88,6 @@ I learned that it is often better to use width properties, rather than margin pr
 
 Startup CSS Project
 I learned that I have a hard time centering things. I sometimes have to try an center a bunch of parent and child elements to get the look I want. I also learned that you can make only text clickable in the button or make the whole button clickable.
+  
+Simon Javascript
+  I learned that it is really hard to use someone else's javascript. There are too many moving pieces. Eventually I got it to work, but it took a long time and a lot of frustration.
