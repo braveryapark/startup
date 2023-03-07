@@ -68,6 +68,7 @@ User picks color scheme.
 User picks number of buttons (or level of difficulty).
 Allow multiple users to have scores recorded on scoresheet.
 Shadow buttons(on hover or all).
+Update average on play screen.
 
 
 
