@@ -92,3 +92,165 @@ I learned that I have a hard time centering things. I sometimes have to try an c
   
 Simon Javascript
   I learned that it is really hard to use someone else's javascript. There are too many moving pieces. Eventually I got it to work, but it took a long time and a lot of frustration.
+  
+  
+  
+  Midterm Notes
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  Kahoot Notes
+  -------------
+  @import url('https://fonts.googleapis.com/css?family=Quicksand');  this css loads fonts from google
+  
+  <html>
+    <head>
+      <style>
+        div {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        }
+      </styly>
+    </head>
+    <body>
+      <div>
+        <p>Hello</p>
+        <p>World</p>
+       </div>
+     </body>
+  </html>
+  
+  Output: Two lines with the first saying World and the second saying Hello.
+  
+  p{
+    padding: 1em;
+  }
+  
+  Result: puts space around the content of selected elements
+  
+ 
+  const f = y => ++y;
+  console.log(f(3))
+  
+  Output: 4
+  
+  <div></div>
+    
+  Description: creates a division element
+    
+  CSS box model (Outside going in)
+  
+  Answer: margin, border, padding, content
+  
+  let a = ['cow', 'rat', 'fish'];
+  let b = a.filter(v => v.match(/A|f/i));
+  console.log(b);
+  
+  Output: ['rat', 'fish']   (Because /i means case insensitive)
+  
+  let a = ['cow', 'rat', 'fish'];
+  let b = a.reduce((a,v) => [a,v].join(':'));
+  console.log(b);
+  
+  Output: cow:rat:fish
+  
+  let a = [1,2,3];
+  let e = a.map(number => {
+    return ('a' + number)
+  });
+  console.log(e);
+  
+  Output: ['a1', 'a2', 'a3']
+  
+  document.querySelector('p').addEventListener('mouseover', console.log);
+  
+  Does: Adds a mouseover event listener to a p element.
+  
+  <ul></ul>
+  
+  Description: HTML tag for unordered list
+  
+  Javascript Functions:
+  function f(x) = {}  --> invalid javascript function
+  const f = (x) => {} --> valid
+  function f(x){} --> valid
+  const f = function(x){} --> valid
+  
+  Javascript in HTML:
+  <javascript>1+1</javascript> --> invalid
+  <script>1+1</script> --> valid
+  <script src = 'main.js' /> --> valid
+  <div onclick='1+1' /> --> valid
+  
+  Javascript Objects:
+  {n:1} --> valid
+  {n=1} --> invalid
+  {"n"=1} --> invalid
+  {"n"="1"} --> invalid
+  
+  DOM textContent: sets the child text for the element.
+  
+  Hyperlinks:
+  <a href='https//c.com'>x</a> --> valid
+  <a src='https://c.com'>x</a> --> invalid
+  <link src='https://c.com'>x</link> --> invalid
+  <link href='https://c.com'>x</link> --> invalid
+  
+  <div>other</div>
+  <div class="jeader">BYU</div>
+  
+  Turning only Byu text blue: div.header{ color: blue; }
+  
+  JSON:
+  {"x":3} --> valid
+  {'x':3} --> invalid
+  {x:3} --> invalid
+  {"x":undefined} --> invalid
+  
+  Console command that makes a script executable: chmod +x deploy.sh
+  
+  DNS Subdomains:
+  cs260.cs.byu.edu --> yes!
+  byu --> no
+  edu --> no
+  byu.edu --> no
+  
+  Pointing to another DNS record: CNAME record type
+  
+  const p = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log('taco');
+      resolvw(true);
+    }, 10000);
+  });
+  console.log('burger');
+  
+  p
+  .then((result) => console.log('shake'))
+  .catch((e) => console.log('salad'))
+  .finally(() => console.log('nooodles'))
+  
+  console.log('fries')
+  
+  Output: burger fries taco shake noodles
+  
+  const a = async function() {
+  return new Promise((resolve, reject) => {
+  setTimeout(() => {console.log('D'); resolve(true)}, 10000);
+  })
+  }
+  
+  try {
+    console.log('A');
+    await a();
+    console.log('B')
+  } catch(e) {
+    console.log('C');
+  }
+  
+  Output: A D B
+  
+  
+  
+  
+  
