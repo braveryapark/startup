@@ -102,7 +102,7 @@ Simon Javascript
   -------------
   @import url('https://fonts.googleapis.com/css?family=Quicksand');  this css loads fonts from google
   
-  "<html>
+  <html>
     <head>
       <style>
         div {
@@ -118,7 +118,7 @@ Simon Javascript
         <p>World</p>
        </div>
      </body>
-  </html>"
+  </html>
   
   Output: Two lines with the first saying World and the second saying Hello.
   
@@ -129,12 +129,12 @@ Simon Javascript
   Result: puts space around the content of selected elements
   
  
-  "const f = y => ++y;
-  console.log(f(3))"
+  const f = y => ++y;
+  console.log(f(3))
   
   Output: 4
   
-  "<div></div>"
+  <div></div>
     
   Description: creates a division element
     
