@@ -102,23 +102,23 @@ Simon Javascript
   -------------
   @import url('https://fonts.googleapis.com/css?family=Quicksand');  this css loads fonts from google
   
-  html
-    head
-      style
+  <html>
+    <head>
+      <style>
         div {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         }
-      /style
-    /head
-   /body
-      div
-        p Hello /p
-        p World /p
-       /div
-     /body
-  /html
+      </style>
+    </head>
+   </body>
+      <div>
+        <p> Hello </p>
+        <p>World</p>
+       </div>
+     </body>
+  </html>
   
   Output: Two lines with the first saying World and the second saying Hello.
   
@@ -171,51 +171,52 @@ Simon Javascript
   Description: HTML tag for unordered list
   
   Javascript Functions:
-  function f(x) = {}  --> invalid javascript function
+  function f(x) = {}  --> invalid
   const f = (x) => {} --> valid
   function f(x){} --> valid
   const f = function(x){} --> valid
   
   Javascript in HTML:
-  <javascript>1+1</javascript> --> invalid
+  <javascript>1+1</javascript> --> invalid (javascript not a tag)
   <script>1+1</script> --> valid
   <script src = 'main.js' /> --> valid
   <div onclick='1+1' /> --> valid
   
   Javascript Objects:
   {n:1} --> valid
-  {n=1} --> invalid
-  {"n"=1} --> invalid
-  {"n"="1"} --> invalid
+  {n=1} --> invalid (no equals in javascript objects)
+  {"n"=1} --> invalid (no equals)
+  {"n"="1"} --> invalid (no equals)
   
   DOM textContent: sets the child text for the element.
   
   Hyperlinks:
   <a href='https//c.com'>x</a> --> valid
-  <a src='https://c.com'>x</a> --> invalid
-  <link src='https://c.com'>x</link> --> invalid
-  <link href='https://c.com'>x</link> --> invalid
+  <a src='https://c.com'>x</a> --> invalid (src is for images)
+  <link src='https://c.com'>x</link> --> invalid (link?)
+  <link href='https://c.com'>x</link> --> invalid (link?)
   
   <div>other</div>
-  <div class="jeader">BYU</div>
+  <div class="header">BYU</div>
   
   Turning only Byu text blue: div.header{ color: blue; }
   
   JSON:
   {"x":3} --> valid
-  {'x':3} --> invalid
-  {x:3} --> invalid
-  {"x":undefined} --> invalid
+  {'x':3} --> invalid (need quotes)
+  {x:3} --> invalid (need quotes)
+  {"x":undefined} --> invalid (can't use undefined in JSON)
   
   Console command that makes a script executable: chmod +x deploy.sh
   
-  DNS Subdomains:
+  DNS Subdomains: (aka something.actualwebsitename.com)
   cs260.cs.byu.edu --> yes!
   byu --> no
   edu --> no
   byu.edu --> no
   
   Pointing to another DNS record: CNAME record type
+  Regular: A record type
   
   const p = new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -235,9 +236,12 @@ Simon Javascript
   Output: burger fries taco shake noodles
   
   const a = async function() {
-  return new Promise((resolve, reject) => {
-  setTimeout(() => {console.log('D'); resolve(true)}, 10000);
-  })
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        console.log('D'); 
+        resolve(true)
+      },10000);
+    })
   }
   
   try {
@@ -250,7 +254,76 @@ Simon Javascript
   
   Output: A D B
   
+  Basic html tags
+  <!DOCTYPE> 	Defines the document type
+  <html>	Defines an HTML document
+  <head>	Contains metadata/information for the document
+  <title>	Defines a title for the document
+  <body>	Defines the document's body
+  <div> Creates a division element
+  <h1> to <h6>	Defines HTML headings
+  <p>	Defines a paragraph
+  <br>	Inserts a single line break
+  <hr>	Defines a thematic change in the content
+  <!--...--> Defines a comment
+  <strong> or <b> is bold
+  <em> or <i> is italics
+  <img>	Defines an image
+  <a>	Defines a hyperlink
+  <link>	Defines the relationship between a document and an external resource (most used to link to style sheets)
+  <nav>	Defines navigation links
+  <ul>	Defines an unordered list
+  <ol>	Defines an ordered list
+  <li>	Defines a list item
+  <table>	Defines a table
+  <th>	Defines a header cell in a table
+  <tr>	Defines a row in a table
+  <td>	Defines a cell in a table
+  <style>	Defines style information for a document
+  <span>	Defines a section in a document
+  <header>	Defines a header for a document or section
+  <footer>	Defines a footer for a document or section
+  <main>	Specifies the main content of a document
+    
+  Arrow Functions-------------->
+  const a = [1, 2, 3, 4];
+  // standard function syntax
+  a.sort(function (v1, v2) {
+    return v1 - v2;
+  });
+  // arrow function syntax
+  a.sort((v1, v2) => v1 - v2);
+    
+  () => 3;
+  // RETURNS: 3
+
+  () => {
+    3;
+  };
+  // RETURNS: undefined
+
+  () => {
+    return 3;
+  };
+  // RETURNS: 3
   
-  
+  function makeClosure(a) {
+  a = 'a2';
+  const b = 'b2';
+  return () => [a, b];
+}
+
+  Javascript Regular Expressions
+  const petRegex = /(dog)|(cat)|(bird)/gim;
+  const text = 'Both cats and dogs are pets, but not rocks.';
+
+  text.match(petRegex);
+  // RETURNS: ['cat', 'dog']
+
+  text.replace(petRegex, 'animal');
+  // RETURNS: Both animals and animals are pets, but not rocks.
+
+  petRegex.test(text);
+  // RETURNS: true
   
   
