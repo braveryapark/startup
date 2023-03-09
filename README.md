@@ -102,23 +102,23 @@ Simon Javascript
   -------------
   @import url('https://fonts.googleapis.com/css?family=Quicksand');  this css loads fonts from google
   
-  <html>
-    <head>
-      <style>
+  html
+    head
+      style
         div {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         }
-      </styly>
-    </head>
-    <body>
-      <div>
-        <p>Hello</p>
-        <p>World</p>
-       </div>
-     </body>
-  </html>
+      /style
+    /head
+   /body
+      div
+        p Hello /p
+        p World /p
+       /div
+     /body
+  /html
   
   Output: Two lines with the first saying World and the second saying Hello.
   
