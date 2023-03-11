@@ -9,28 +9,61 @@
             h1{
                 text-align: center;
             }
-            .rows{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                width: 100%;
+            h2{
+                text-align: center;
             }
-            .row1{
-                display: flex;
-                justify-content: center;
-                flex-direction: row;
+            h3{
+                text-align: center;
             }
-            .row2{
-                display: flex;
-                justify-content: center;
-                flex-direction: row;
+            #start{
+                width: 35%;
+                aspect-ratio: 7/1;
+                margin-left: 5%;
+                margin-right: 2.5%;
+            }
+            #stop{
+                width: 35%;
+                aspect-ratio: 7/1;
+                margin-right: 5%;
+                margin-left: 2.5%;
             }
             button{
-                aspect-ratio: 1/.5;
+                aspect-ratio: 2/1;
                 width: 10%;
+                color: rgb(197, 213, 226);
+            }
+            #start-stop{
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+            #buttons-container{
+                margin-top: 2%;
+                width: 65%;
+                margin-left: 17.5%;
+                margin-right: 17.5%;
             }
             .github{
                 width: 10%;
+                height: 90%;
+            }
+            body{
+                height: 100%;
+                overflow: hidden;
+            }
+            total-buttons{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 6%;
+                background-color: rgb(211, 211, 211);
             }
         </style>
     </head>
@@ -39,15 +72,16 @@
             <h1>Play</h1>
         </header>
         <main>
-            <div id="buttons-container">
-                <button id="start" class="btn-info" onclick="loadButtons()"></button>
-
+            <div id="start-stop">
+                <button id="start" class="btn-success" onclick="start()">Start</button>
+                <button id="stop" class="btn-danger" onclick="calculateTimes()">Stop</button>
+            </div>
+            <div id="total-buttons">
+                <div id="buttons-container"></div>
             </div>
         </main>
         <footer>
-            <hr />
             <span class="text-reset">Avery Park</span>
-            <br />
             <button class = "github"><a href= "https://github.com/braveryapark/startup">My Github</a></button>
         </footer>
         <script src="play.js"></script>

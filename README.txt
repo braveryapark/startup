@@ -59,8 +59,8 @@ Save username as done in Simon.
 Evaluate times.
 Calculate averages.
 Print to scoresheet.
-Fit buttons to screen.
-Add "Done" button.
+Fit buttons to screen. -Done
+Add "Done" button. -Done
 Change colors.
 *Possible Cool Things*
 End if wrong button is clicked.

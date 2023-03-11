@@ -9,6 +9,9 @@
             h1{
                 text-align: center;
             }
+            h2{
+                text-align: center;
+            }
             .intro{
                 display: flex;
                 flex-direction: row;
@@ -34,11 +37,34 @@
             }
             #start-button{
                 width: 80%;
-                margin: auto;
+                margin: 10%;
                 text-align: center;
             }
             .github{
                 width: 10%;
+                height: 90%;
+            }
+            footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 8%;
+                background-color: rgb(211, 211, 211);
+            }
+            .about{
+                border-style: groove;
+                border-radius: 25px;
+                border-color: green;
+                align-content: center;
+                background-color: cornsilk;
+            }
+            .gettingStarted{
+                border-style: groove;
+                border-radius: 25px;
+                border-color: green;
+                align-content: center;
+                background-color: cornsilk;
             }
         </style>
     </head>
@@ -51,21 +77,31 @@
             <div class="intro">
                 <div class="about">
                     <h2>About Reflex Tester</h2>
-                    <p>Reflex tester is a game meant to quanitfy the user's reflex response. There are multiple rounds and each round will increase in difficulty. At the end of the three rounds, the times of your three rounds will be combined and displayed as your overall score.</p>
+                    <ul>
+                    <li>Reflex Tester quanitfies reflex response.</li>
+                    <li>Created by Avery Park</li>
+                    <li>BYU Computer Science</li>
+                    <li>In connection with CS 260 Web Programming.</li>
+                    <li>Debut March 10th 2023</li>
+                </ul>
                 </div>
                 <div class="gettingStarted">
                     <h2>How to Play</h2>
-                    
-                    <p>Once you click the button below, your job will be to click the mismatching square as fast as you can. This will immediately take you to the next round where you repeat the process until all rounds are complete. Your score will then be displayed.</p>
+                    <ul>
+                        <li>Click "Start" to begin your test.</li>
+                        <li>Select the mismatching button as fast as you can.</li>
+                        <li>If you click an incorrect button, you fail.</li>
+                        <li>Click "Stop" to end your test.</li>
+                        <li>Your average reflex response time will be displayed.</li>
+                    </ul>
                 </div>
             </div>
-            <a id="start-button" class="btn-success" href="play.html">Play</a>
+            <a id="start-button" class="btn-success" href="play.html">Gameplay Page</a>
+
 
         </main>
         <footer>
-            <hr />
             <span class="text-reset">Avery Park</span>
-            <br />
             <button class = "github"><a href= "https://github.com/braveryapark/startup">My Github</a></button>
         </footer>
     </body>
