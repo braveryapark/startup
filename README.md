@@ -325,5 +325,10 @@ Simon Javascript
 
   petRegex.test(text);
   // RETURNS: true
+
+
+
+  Startup Javascript
+  I learned that javascript isn't actually too bad. When I wrote it myself, I could basically write it like any other code (with some googling). I liked how easy it was for me to create my 100 buttons. It would've taken a lot of code without Javascript. But with it, it only took a couple.
   
   
