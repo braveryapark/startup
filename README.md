@@ -330,5 +330,34 @@ Simon Javascript
 
   Startup Javascript
   I learned that javascript isn't actually too bad. When I wrote it myself, I could basically write it like any other code (with some googling). I liked how easy it was for me to create my 100 buttons. It would've taken a lot of code without Javascript. But with it, it only took a couple.
+    
+    
+    URL Notes---------------------------------------------------------------------------------------------------------------------------------------
+    https://byu.edu:443/cs/260/student?filter=accepted#summary
+    
+    <scheme>://<domain name>:<port>/<path>?<parameters>#<anchor>
+    
+    Scheme	- https	- The protocol required to ask for the resource. For web applications, this is usually HTTPS. But it could be any internet protocol such as FTP or MAILTO.
+    Domain name	 - byu.edu -	The domain name that owns the resource represented by the URL.
+    Port	- 3000	- The port specifies the numbered network port used to connect to the domain server. Lower number ports are reserved for common internet protocols, higher number ports can be used for any purpose. The default port is 80 if the scheme is HTTP, or 443 if the scheme is HTTPS.
+    Path -	/school/byu/user/8014	- The path to the resource on the domain. The resource does not have to physically be located on the file system with this path. It can be a logical path representing endpoint parameters, a database table, or an object schema.
+    Parameters -	filter=names&highlight=intro,summary	- The parameters represent a list of key value pairs. Usually it provides additional qualifiers on the resource represented by the path. This might be a filter on the returned resource or how to highlight the resource. The parameters are also sometimes called the query string.
+    Anchor -	summary	- The anchor usually represents an sub-location in the resource. For HTML pages this represents a request for the browser to automatically scroll to the element with an ID that matches the anchor. The anchor is also sometimes called the hash, or fragment ID.
+    
+    
+    URL, URN, and URI
+You will sometimes hear the use of URN or URI when talking about web resources. A Uniform Resource Name (URN) is a unique resource name that does not specify location information. For example, a book URN might be urn:isbn:10,0765350386. A Uniform Resource Identifier (URI) is a general resource identifier that could refer to either a URL and URN. With web programming you are almost always talking about URLs and therefore you should not use the more general URI.
   
+     Port Notes--------------------------------------------------------------------------------------------------------------------------------------
+      Common Ports
+      20	File Transfer Protocol (FTP) for data transfer
+      22	Secure Shell (SSH) for connecting to remote devices
+      25	Simple Mail Transfer Protocol (SMTP) for sending email
+      53	Domain Name System (DNS) for looking up IP addresses
+      80	Hypertext Transfer Protocol (HTTP) for web requests
+      110	Post Office Protocol (POP3) for retrieving email
+      123	Network Time Protocol (NTP) for managing time
+      161	Simple Network Management Protocol (SNMP) for managing network devices such as routers or printers
+      194	Internet Relay Chat (IRC) for chatting
+      443	HTTP Secure (HTTPS) for secure web requests
   
